@@ -1,33 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Tristen Flores</title>
+  <style>
+    :root {
+      --max-width: 680px;
+      --muted: #6b6b6b;
+    }
+
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: #111;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* centered column */
+    .container {
+      max-width: var(--max-width);
+      margin: 48px auto;        /* centers horizontally */
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;      /* name + small subtitle centered */
+      margin-bottom: 1rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 48px;
+      line-height: 1;
+      font-weight: 700;
+    }
+    .subtitle {
+      margin-top: 8px;
+      color: var(--muted);
+      font-style: normal;
+      font-size: 14px;
+    }
+
+    /* body text stays left-aligned inside the centered column */
+    p.intro {
+      margin: 18px 0 24px;
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #d0d0d0;
+      margin: 28px 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 0 0 10px;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 1.2em;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #4b0082; /* slightly purple like the screenshot */
+    }
+    a:hover { text-decoration: none; }
+
+    .contact p { margin: 8px 0; }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 28px;
+    }
+
+    @media (max-width: 520px) {
+      h1 { font-size: 32px; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Tristen Flores</h1>
-  <p>
-    I'm Tristen Flores, a junior at Rice University studying Mechanical Engineering. 
-    I am interested in the aerospace and automotive industries, with experiences in plant engineering, 
-    undergraduate research, and design engineering. Please feel free to explore my portfolio below.
-  </p>
+  <div class="container">
+    <header>
+      <h1>Tristen Flores</h1>
+      <div class="subtitle">Mechanical Engineering · Rice University</div>
+    </header>
 
-  <hr>
+    <p class="intro">
+      I'm Tristen Flores, a junior at Rice University studying Mechanical Engineering with interests in the aerospace and automotive industries.
+      Below are PDF presentations that correspond to experiences on my résumé.
+    </p>
 
-  <h3>Portfolio</h3>
-  <ul>
-    <li><a href="portfolio/1_PlantEngineeringIntern.pdf" target="_blank">Plant Engineering Intern</a></li>
-    <li><a href="portfolio/2_UndergraduateResearcher.pdf" target="_blank">Undergraduate Researcher</a></li>
-    <li><a href="portfolio/3_DesignEngineeringStudent.pdf" target="_blank">Design Engineering Student</a></li>
-  </ul>
+    <hr>
 
-  <hr>
+    <h2>Portfolio</h2>
+    <ul>
+      <li><a href="portfolio/1_PlantEngineeringIntern.pdf" target="_blank" rel="noopener">Plant Engineering Intern — View PDF</a></li>
+      <li><a href="portfolio/2_UndergraduateResearcher.pdf" target="_blank" rel="noopener">Undergraduate Researcher — View PDF</a></li>
+      <li><a href="portfolio/3_DesignEngineeringStudent.pdf" target="_blank" rel="noopener">Design Engineering Student — View PDF</a></li>
+    </ul>
 
-  <h3>Contact Me</h3>
-  <p>Email: <a href="mailto:tristenflores04@gmail.com">tristenflores04@gmail.com</a></p>
+    <hr>
 
-  <hr>
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:tristenflores04@gmail.com">tristenflores04@gmail.com</a></p>
+      <!-- Uncomment and update if you want phone shown:
+      <p>Phone: <a href="tel:+18324995541">+1 (832) 499-5541</a></p>
+      -->
+    </section>
 
-  <p>© 2025 Tristen Flores</p>
+    <hr>
+
+    <footer>© 2025 Tristen Flores</footer>
+  </div>
 </body>
 </html>
